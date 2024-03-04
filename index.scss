@@ -1,0 +1,173 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nav {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+    padding: 1rem 2rem;
+
+    .nav-title {
+        h2 {
+            font-size: 1.6rem;
+        }
+    }
+
+    .nav-list {
+        ul {
+            display: none;
+        }
+    }
+
+    .nav-login {
+        span {
+            a {
+                background-color: black;
+                color: white;
+            }
+        }
+        a {
+            display: inline;
+            padding: 0.5rem 0.75rem;
+            border-radius: 0.25rem;
+            font-size: 12px;
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
+
+.content {
+    margin: 0 auto;
+    margin-top: 5rem;
+    width: 90%;
+    .title-page {
+        text-align: center;
+        h1 {
+            
+            font-size: 2.5rem;
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        p {
+            color: rgb(70, 68, 68);
+            margin-top: 1rem;
+        }
+
+        .purchase {
+            margin-top: 1.5rem;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+
+            span {
+                a {
+                    display: inline;
+                    background-color: black;
+                    color: white;
+                }
+            }
+    
+            a {
+                color: black;
+                text-decoration: none;
+                padding: 0.75rem 1rem;
+                border-radius: 0.5rem;
+                border: 1px solid black; 
+                font-size: 14px;
+            }
+        }
+    }
+
+    img {
+        margin: 2rem 0;
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .nav {
+        padding: 1rem 3rem;
+        .nav-title {
+            h2 {
+                font-size: 2rem
+            }
+        }
+
+        .nav-list {
+            ul {
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                gap: 2rem;
+                font-size: 14px;
+                li {
+                    a {
+                        text-decoration: none;
+                        color: black;
+                        padding: 1rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .content {
+        width: 80%;
+        margin-top: 7rem;
+        .title-page {
+            h1 {
+                font-size: 4rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+
+            .purchase {
+                a {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        img {
+            margin: 5rem 0;
+        }
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .content {
+        .title-page{
+            h1 {
+                font-size: 7rem;
+            }
+
+            p {
+                font-size: 2rem;
+            }
+
+            .purchase {
+                a {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
